@@ -1,0 +1,46 @@
+:root {
+  --primary-bg: #2f303a;
+  --secondary-bg: #202027;
+  --button-bck: #1762a7;
+  --accent-text: #ad305a;
+  --border-input: #2e3852;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before, body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+body::before {
+  width: 500px;
+  height: 500px;
+  background: rgba(188, 58, 128, 0.1); 
+  bottom: -150px;
+  left: -150px;
+}
+
+body::after {
+  width: 600px;
+  height: 600px;
+  background: rgba(52, 87, 178, 0.1);
+  top: -100px;
+  right: -100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
