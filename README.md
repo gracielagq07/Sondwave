@@ -1,16 +1,39 @@
-# React + Vite
+🎵 SoundWave - Music Discovery App SoundWave es una aplicación web moderna de descubrimiento de música construida con React y Vite. Este proyecto se enfoca en ofrecer una experiencia de usuario fluida con un diseño responsivo y una arquitectura de componentes robusta.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Características principales
 
-Currently, two official plugins are available:
+Diseño Responsivo: Adaptado para dispositivos móviles, tablets y escritorio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navegación Fluida: Implementación de react-router-dom para una experiencia de Single Page Application (SPA).
 
-## React Compiler
+Formularios Accesibles: Página de registro con validación de estructura y vinculación de etiquetas para lectores de pantalla.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Testing Automatizado: Suite de pruebas completa para asegurar la integridad de las vistas principales.
 
-## Expanding the ESLint configuration
+🧪 Testing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El proyecto utiliza Vitest y React Testing Library. Se han implementado pruebas unitarias y de integración para:
+
+Home: Verificación de carga de elementos críticos y assets.
+
+Discover: Validación de renderizado de servicios y manejo de elementos duplicados.
+
+Join: Pruebas de funcionalidad de formularios y accesibilidad (conexión label-input).
+
+Para ejecutar los tests:
+
+Bash
+
+cd soundwave
+
+npm test
+
+🛠️ Tecnologías utilizadas
+
+Frontend: React.js, HTML5, CSS3.
+
+Herramientas de construcción: Vite.
+
+Testing: Vitest, React Testing Library, JSDOM.
+
+Routing: React Router v6.
